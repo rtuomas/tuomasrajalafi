@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="shortcut icon" href="images/t_icon.png" type="image/x-icon">
+    <title>Tuomas Rajala</title>
+</head>
+<body>
+    <section class="show">
+        <header class="head">
+            <div class="toggle"></div>
+            <h1 class="logo">Tuomas Rajala</h1>
+        </header>
+        <video src="background.mov" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <div id="home">
+                <h2>Welcome to my homepage!</h2>
+                <h3 style="color: red;">(Work in progress)</h3>
+                <p>I will list some of my or my teams projects in the "Projects" -page. As you can see there aren't many at the moment.</p>
+                <p><br>This web page is running on Raspberry Pi 4 Model B. Please consider the amount of traffic. <br>Thank you!</p>
+            </div>
+
+            <div id="projects">
+                <h2>Projects</h2>
+                <ul class="projectList">
+                    <li class="project">
+                        <a href="/photoshop" id="photoshop">
+                            <h3>Photoshop</h3>
+                            <p style="color: red;">Work in progress...</p>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="https://github.com/rtuomas/frisbeegolf" id="frisbee">
+                            <h3>Frisbeegolf</h3>
+                            <p>Javascript (Node.js), HTML, CSS, SQL</p>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="https://github.com/rtuomas/ER_simulation" id="er">
+                            <h3>ER Simulation</h3>
+                            <p>Java, SQL</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="contact">
+                <p>Email: Tuomas.Rajala2@metropolia.fi</p>
+            </div>
+
+        </div>
+
+        <ul class="contacts">
+            <li><a href="https://www.linkedin.com/in/tuomasrajala/"><img src="images/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="https://github.com/rtuomas"><img src="images/github.png" alt="github"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li id="homeMenu">Home</li>
+            <li id="projectsMenu">Projects</li>
+            <li id="contactMenu">Contact</li>
+        </ul>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
