@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="shortcut icon" href="images/t_icon.png" type="image/x-icon">
+    <title>Photo and Shop</title>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Not ready yet!!</h1>
+        <label class="file-upload">
+            <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+            Upload image!
+        </label>
+
+        <div class="option">
+            <p>Size <span id="sizeCount"></span></p>
+            <input type="range" min="1" max="600" value="300" class="slider" id="size">
+        </div>
+    </header>
+    <aside>
+        <div class="options">
+
+            <div class="option">
+                <p>Background <span id="backgroundCount"></span></p>
+                <input type="range" min="0" max="1080" value="0" class="slider" id="background">
+            </div>
+
+            <div class="option">
+                <p>Grayscale <span id="grayscaleCount"></span></p>
+                <input type="range" min="0" max="100" value="0" class="slider" id="grayscale">
+            </div>
+
+            <div class="option">
+                <p>Invert <span id="invertCount"></span></p>
+                <input type="range" min="0" max="100" value="0" class="slider" id="invert">
+            </div>
+
+            <div class="option">
+                <p>Hue-rotate <span id="huerotateCount"></span></p>
+                <input type="range" min="0" max="360" value="0" class="slider" id="huerotate">
+            </div>
+
+            <div class="option">
+                <p>Blur <span id="blurCount"></span></p>
+                <input type="range" min="0" max="10" value="0" class="slider" id="blur">
+            </div>
+
+            <div class="option">
+                <p>Brightness <span id="brightnessCount"></span></p>
+                <input type="range" min="0" max="200" value="100" class="slider" id="brightness">
+            </div>
+
+            <div class="option">
+                <p>Contrast <span id="contrastCount"></span></p>
+                <input type="range" min="0" max="200" value="100" class="slider" id="contrast">
+            </div>
+
+            <div class="opacity">
+                <p>Opacity <span id="opacityCount"></span></p>
+                <input type="range" min="0" max="100" value="100" class="slider" id="opacity">
+            </div>
+
+            <div class="option">
+                <p>Saturate <span id="saturateCount"></span></p>
+                <input type="range" min="0" max="200" value="100" class="slider" id="saturate">
+            </div>
+
+            <div>
+                <canvas id="shadow" width="100" height="100"></canvas>
+                <div class="option">
+                    <p>Drop shadow <span id="dropshadowCount"></span></p>
+                    <input type="range" min="0" max="20" value="0" class="slider" id="dropshadow">
+                </div>
+            </div>
+
+        </div>
+    </aside>
+    <section>
+        <p><img id="image" width="300" /></p>
+        <!--
+        <canvas id="canvas2" width="400px" height="400px"></canvas>
+        <a id="download">Download image</a>
+        -->
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

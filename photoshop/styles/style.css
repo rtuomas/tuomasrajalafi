@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+
+* {
+    font-family: 'Mali', cursive;
+}
+
+html, body {
+    overflow: none;
+    height: 100%;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upload  {
+    padding: 15px;
+    width: 50px;
+    background-color: #bebebe;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    /*background-color: #bebebe;*/
+    background-image: radial-gradient(
+      circle at top left,
+      #bebebe,
+      #312b2d
+    );
+    padding: 15px;
+    border: 3mm ridge rgb(82, 72, 72);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    background-color: blanchedalmond;
+    border: 1px solid rgb(146, 3, 3);
+    display: inline-block;
+    padding: 6px;
+    cursor: pointer;
+}
+
+section {
+    width: auto;
+}
+
+aside {
+
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    z-index: 5;
+    background-image: radial-gradient(
+      circle at top left,
+      #bebebe,
+      #312b2d
+    );
+    border: 3mm ridge rgb(82, 72, 72);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.option p {
+    margin: 2px 0;
+    padding: 0px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgb(103, 155, 155);*/
+    opacity: 1;
+    z-index: -4;
+}
+
+img {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+canvas {
+    border:1px solid #020101;
+    background-color: #ffffff;
+}
+
+input[type=range].slider {
+    width: 100%;
+    margin: 0.85px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range].slider:focus {
+    outline: none;
+  }
+  input[type=range].slider::-webkit-slider-runnable-track {
+    background: #5d9dd6;
+    border: 2.4px solid #ffa4a4;
+    width: 100%;
+    height: 12.3px;
+    cursor: pointer;
+  }
+  input[type=range].slider::-webkit-slider-thumb {
+    margin-top: -3.25px;
+    width: 13px;
+    height: 14px;
+    background: #8d0000;
+    border: 2.9px solid #e16017;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range].slider:focus::-webkit-slider-runnable-track {
+    background: #75acdc;
+  }
+  input[type=range].slider::-moz-range-track {
+    background: #5d9dd6;
+    border: 2.4px solid #ffa4a4;
+    width: 100%;
+    height: 12.3px;
+    cursor: pointer;
+  }
+  input[type=range].slider::-moz-range-thumb {
+    width: 13px;
+    height: 14px;
+    background: #8d0000;
+    border: 2.9px solid #e16017;
+    cursor: pointer;
+  }
+  input[type=range].slider::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 4.95px 0;
+    color: transparent;
+    width: 100%;
+    height: 12.3px;
+    cursor: pointer;
+  }
+  input[type=range].slider::-ms-fill-lower {
+    background: #458ed0;
+    border: 2.4px solid #ffa4a4;
+  }
+  input[type=range].slider::-ms-fill-upper {
+    background: #5d9dd6;
+    border: 2.4px solid #ffa4a4;
+  }
+  input[type=range].slider::-ms-thumb {
+    width: 13px;
+    height: 14px;
+    background: #8d0000;
+    border: 2.9px solid #e16017;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type=range].slider:focus::-ms-fill-lower {
+    background: #5d9dd6;
+  }
+  input[type=range].slider:focus::-ms-fill-upper {
+    background: #75acdc;
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range].slider {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+
+
+
