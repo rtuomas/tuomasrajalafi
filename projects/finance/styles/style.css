@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(255, 244, 231);
+}
+
+.stocks {
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+}

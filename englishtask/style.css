@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+* {
+    font-family: 'Catamaran', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: auto;
+    height: auto;
+    padding: 0 15%;
+    background: rgb(143,41,65);
+    background: linear-gradient(0deg, rgba(143,41,65,1) 0%, rgba(15,14,82,1) 100%);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name {
+    position: fixed;
+    z-index: 5;
+    top: 10px;
+    left: 10px;
+    font-size: 1.7em;
+
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.363);
+
+    animation-name: coloring;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.task {
+    position: fixed;
+    z-index: 5;
+    top: 10px;
+    right: 10px;
+    font-size: 1.7em;
+
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.363);
+
+    animation-name: coloring;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coloring {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    50% {
+        color: rgb(238, 255, 0);
+    }
+    100% {
+        color: rgb(0, 255, 55);
+    }
+}
+
+#container {
+    padding: 30px;
+
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0.61) 0%, rgba(0,0,0,0.47) 100%);
+    -webkit-box-shadow: 0px 0px 72px 16px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 0px 72px 16px rgba(0,0,0,0.57);
+
+    box-shadow: 0px 0px 72px 16px rgba(0,0,0,0.57);
+}
+
+.sentence {
+    margin: 3px;
+}
+
+.betterSentence {
+    margin-top: 3px;
+    margin-left: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+p, h1{
+    color: blanchedalmond;
+}
+
+.combo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+audio {
+    margin: 3px;
+    color: black;
+}
+
+.separator {
+    margin: 3px;
+    border-bottom: 3px solid rgba(114, 0, 0, 0.507);
+}
