@@ -1,5 +1,7 @@
 'use strict';
 
+console.log("test");
+
 //Slowing the background video a little bit...
 document.querySelector('video').playbackRate = 0.8;
 
